@@ -1,0 +1,16 @@
+.modal-mini-cart-wrapper{
+  position: absolute;
+  top: 80px;
+  left: 0;
+  display: block;
+  min-height: calc(100% - 80px);
+  width: 100%;
+  background-color: rgba(100, 100, 100, .4);
+  cursor: pointer;
+  box-sizing: border-box;
+  z-index: 15;
+
+  & > div {
+    cursor: default;
+  }
+}

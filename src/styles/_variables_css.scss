@@ -1,0 +1,55 @@
+body {
+  --dark-color-default-theme: #1D1F22;
+  --grey-color-default-theme: #A6A6A6;
+  --light-grey-color-default-theme: #EDEDED;
+  --cart-color-default: #4346E4;
+  --c-white: white;
+  --c-white-hover: #EFFBF2;
+  --c-primary: #5ECE7B;
+  --c-primary-hover: #0DBF3B;
+  --c-product-in-category-background: #F7F7F7;
+  --c-product-in-category-shadow: rgba(168, 172, 176, .12);
+  --c-product-in-category-shadow-hover: rgba(168, 172, 176, .22);
+
+  --c-frame-in-gallery-background: #FBFBFB;
+  --caption-in-product-card-font: Roboto Condensed, sans-serif;
+  --amount-in-cart-font: Roboto, sans-serif;
+  --price-regular-font: Raleway, sans-serif;
+  --button-font: Raleway, sans-serif;
+}
+
+.variables-set-0 {
+  --price-visibility-0: visible;
+  --price-visibility-1: hidden;
+  --price-visibility-2: hidden;
+  --price-visibility-3: hidden;
+  --price-visibility-4: hidden;
+}
+.variables-set-1 {
+  --price-visibility-0: hidden;
+  --price-visibility-1: visible;
+  --price-visibility-2: hidden;
+  --price-visibility-3: hidden;
+  --price-visibility-4: hidden;
+}
+.variables-set-2 {
+  --price-visibility-0: hidden;
+  --price-visibility-1: hidden;
+  --price-visibility-2: visible;
+  --price-visibility-3: hidden;
+  --price-visibility-4: hidden;
+}
+.variables-set-3 {
+  --price-visibility-0: hidden;
+  --price-visibility-1: hidden;
+  --price-visibility-2: hidden;
+  --price-visibility-3: visible;
+  --price-visibility-4: hidden;
+}
+.variables-set-4 {
+  --price-visibility-0: hidden;
+  --price-visibility-1: hidden;
+  --price-visibility-2: hidden;
+  --price-visibility-3: hidden;
+  --price-visibility-4: visible;
+}

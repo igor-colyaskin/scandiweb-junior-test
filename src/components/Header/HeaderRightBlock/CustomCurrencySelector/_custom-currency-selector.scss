@@ -1,0 +1,94 @@
+.custom-currency-selector-wrapper {
+  position: relative;
+  width: 66px;
+  background-color: var(--c-white);
+  font-family: var(--price-regular-font);
+  font-size: 18px;
+  font-weight: 500;
+  z-index: 2;
+  box-sizing: border-box;
+}
+.custom-currency-selector-input {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+.custom-currency-selector-caption {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.custom-current-currency {
+  height: 24px;
+  width: 28px;
+  padding-top: 5px;
+  text-align: right;
+  box-sizing: border-box;
+
+}
+
+.custom-currency-selector-arrow {
+  height: 24px;
+  width: 24px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: 59% 78%;
+}
+
+.custom-currency-selector-arrow-up {
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='4' viewBox='0 0 8 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.5L4 0.5L7 3.5' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+
+}
+
+.custom-currency-selector-arrow-down {
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='4' viewBox='0 0 8 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0.5L4 3.5L7 0.5' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+
+}
+
+.custom-currency-selector-options {
+  position: absolute;
+  top: 61px;
+  box-sizing: border-box;
+}
+
+.custom-currency-selector-option {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 29px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--c-primary);
+  }
+}
+
+.custom-currency-selector-symbol,
+.custom-currency-selector-label {
+  height: 21px;
+  box-sizing: border-box;
+}
+
+.custom-currency-selector-symbol{
+  padding-right: 2px;
+  width: 30px;
+  text-align: right;
+}
+
+.custom-currency-selector-label {
+  padding-left: 2px;
+  width: 38px;
+  text-align: left;
+}
+
+.form-in-custom-currency-selector {
+  height: 0;
+  width: 0;
+  border: none;
+  outline: none;
+}

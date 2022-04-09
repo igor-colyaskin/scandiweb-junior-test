@@ -1,0 +1,12 @@
+.app-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color:var(--c-white);
+  padding: 0;
+  box-sizing: border-box;
+}

@@ -1,0 +1,9 @@
+body {
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  margin-left: calc((100vw - 24px - 100%) / 2);
+  box-sizing: border-box;
+}
