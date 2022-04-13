@@ -1,8 +1,8 @@
-import _ from "lodash";
+import _ from "lodash"
 
 const cartReducerDefaultState = []
 
-export default (state = cartReducerDefaultState, action) => {
+const cartReducer = (state = cartReducerDefaultState, action) => {
     switch (action.type) {
         case 'REPLACE_CART_WITH_UPDATED_CLONE':
                return action.payload
@@ -28,7 +28,6 @@ export default (state = cartReducerDefaultState, action) => {
             }
 
         case 'CHANGE_AMOUNT_ON_CART_ID':
-
             return state
                 .map(cartItem => {
                     if (cartItem.cartId === action.cartId) {
@@ -43,16 +42,9 @@ export default (state = cartReducerDefaultState, action) => {
         case 'REMOVE_ITEM_FROM_CART':
             return state.filter(cartItem => cartItem.cartId !== action.itemId)
 
-
-        case 'EDIT_ITEM_IN_CART':
-            return state.map(cartItem => {
-                if (cartItem.cartId === action.itemId) {
-                    return {...cartItem, ...action.updates}
-                } else {
-                    return cartItem
-                }
-            })
         default:
             return state
     }
 }
+
+export default cartReducer

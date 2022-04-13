@@ -1,6 +1,5 @@
-import React, {Component} from 'react';
-import {ProductAttributesWrapper} from "./styled/product-attributes-wrapper";
-import {ProductAttribute} from "./ProductAttribute/product-attribute";
+import React, {Component} from 'react'
+import {ProductAttribute} from "./ProductAttribute/product-attribute"
 
 export class ProductAttributes extends Component {
 
@@ -13,12 +12,12 @@ export class ProductAttributes extends Component {
         } = this.props
 
         const isCaptionVisible =
-            view === 'forProductCard' ||
-            view === 'forBigCart' ||
-            view === 'forMiniCart'
+            view === 'for-product-card' ||
+            view === 'for-big-cart' ||
+            view === 'for-mini-cart'
 
         return (
-            <ProductAttributesWrapper className='product-attributes-wrapper' view={view}>
+            <div className={`product-attributes product-attributes-${view}`}>
                 {attributesArray.map(attribute => {
                     return (<ProductAttribute
                         key={attribute.id}
@@ -32,7 +31,7 @@ export class ProductAttributes extends Component {
                         onAttributeClick={onAttributeClick}
                     />)
                 })}
-            </ProductAttributesWrapper>
+            </div>
         )
     }
 }

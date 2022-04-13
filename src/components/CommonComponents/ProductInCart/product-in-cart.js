@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
-import {ProductInCartWrapper} from "./styled/product-in-cart-wrapper";
-import {LeftBlock} from "./left-block";
-import {RightBlock} from "./RightBlock/right-block";
+import React, {Component} from 'react'
+import {LeftBlock} from "./left-block"
+import {RightBlock} from "./RightBlock/right-block"
 
 export class ProductInCart extends Component {
     onClickPlusMinus = (x) => this.props.onClickPlusMinus(this.props.cartId, x)
@@ -35,13 +34,10 @@ export class ProductInCart extends Component {
         }
 
         return (
-            <ProductInCartWrapper
-                className='product-in-cart-wrapper'
-                view={view}
-            >
+            <div className={`product-in-cart-wrapper product-in-cart-wrapper-${view}`}>
                 <LeftBlock {...propsForLeftBlock}/>
                 <RightBlock {...propsForRightBlock}/>
-            </ProductInCartWrapper>
+            </div>
         )
     }
 }

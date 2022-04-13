@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {ProductInCart} from "../CommonComponents/ProductInCart/product-in-cart";
-import {CartWrapper} from "./styled/cart-wrapper";
 import {CartCaption} from "./CartCaption/cart-caption";
 import {TotalBlock} from "./TotalBlock/total-block";
 import {CartButtonBlock} from "./CartButtonBlock/cart-button-block";
@@ -23,12 +22,10 @@ export class Cart extends Component {
             return prev + nextPrice * product.amount
         }, 0)
 
-        // is necessary when foll back to design view
-        // const isTotalBlockVisible = view === 'forMiniCart' && !!total
-        const isCartButtonBlockVisible = view === 'forMiniCart' && !!total
+        const isCartButtonBlockVisible = view === 'for-mini-cart' && !!total
 
         return (
-            <CartWrapper className='cart-wrapper' view={view}>
+            <div className={`cart-wrapper-${view}`}>
                 <CartCaption
                     view={view}
                     itemsAmount={productsArray.length}
@@ -81,6 +78,6 @@ export class Cart extends Component {
                     closeMiniCartModal={closeMiniCartModal}
                 />
                 }
-            </CartWrapper>)
+            </div>)
     }
 }

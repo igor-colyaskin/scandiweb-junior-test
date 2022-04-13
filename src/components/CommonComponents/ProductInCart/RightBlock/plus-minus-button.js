@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import {PlusMinusButtonWrapper} from "../styled/plus-minus-button-wrapper";
+import React, {Component} from 'react'
 
 export class PlusMinusButton extends Component {
 
@@ -7,11 +6,13 @@ export class PlusMinusButton extends Component {
         const {onClickPlusMinus, value, view} = this.props
 
         return (
-            <PlusMinusButtonWrapper
-                view={view}
-                isPlus={value > 0}
-                onClick={() => onClickPlusMinus(value)}>
-            </PlusMinusButtonWrapper>
+            <button className={`
+            plus-minus-button 
+            plus-minus-button-${view}
+            ${value > 0 ? 'plus' : 'minus'}-button 
+            `}
+                    onClick={() => onClickPlusMinus(value)}>
+            </button>
         )
     }
 }

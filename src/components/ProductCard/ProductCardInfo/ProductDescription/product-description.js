@@ -1,5 +1,6 @@
-import React, {Component} from 'react';
-import {DescriptionWrapper} from "./styled/description-wrapper";
+import React, {Component} from 'react'
+import {DescriptionWrapper} from "./styled/description-wrapper"
+import {Markup} from "interweave";
 
 export class ProductDescription extends Component {
 
@@ -48,8 +49,9 @@ export class ProductDescription extends Component {
                 <div
                     ref={this.descriptionRef}
                     className='product-description'
-                    dangerouslySetInnerHTML={{__html: description}}
-                />
+                >
+                   <Markup content={description} noWrap={true}/>
+                </div>
                 <div className='collapse-description'>
                     {(isTextOverflow && !this.state.isDescriptionWrapperCollapsed) &&
                     <button className='collapse-button' onClick={this.doCollapse}>

@@ -1,7 +1,8 @@
-import React, {Component} from "react";
-import {Header} from "../Header/header";
-import {Page} from "../Page/page";
-import {ModalMiniCart} from "../ModalMiniCart/modal-mini-cart";
+import React, {Component} from "react"
+import {Header} from "../Header/header"
+import {Page} from "../Page/page"
+import {ModalMiniCart} from "../ModalMiniCart/modal-mini-cart"
+import CartHocRedux from "../../containers/cart.hoc.redux";
 
 export class App extends Component {
 
@@ -12,13 +13,12 @@ export class App extends Component {
     onClick = (event) => {
         const source = event.target
 
-        if (source.classList.contains('custom-currency-selector-arrow')) {
+        if (source.classList.contains('custom-currency-selector-arrow') ||
+            source.classList.contains('custom-current-currency')) {
             const prev = this.state.isCurrencySelectorOpen
             this.setState({isCurrencySelectorOpen: !prev})
             return
         }
-        if (source.classList.contains('custom-currency-selector-symbol')) return
-        if (source.classList.contains('custom-currency-selector-label')) return
         if (!this.state.isCurrencySelectorOpen) return
         this.setState({isCurrencySelectorOpen: false})
     }
@@ -37,10 +37,8 @@ export class App extends Component {
                     isCurrencySelectorOpen={this.state.isCurrencySelectorOpen}
                 />
                 <Page {...this.props}/>
-                {isCartModalVisible && <ModalMiniCart
-                    onModalMarginClick={onModalMarginClick}
-                />}
-
+                {isCartModalVisible && <ModalMiniCart onModalMarginClick={onModalMarginClick}/>}
+                {isCartModalVisible && <CartHocRedux view='for-mini-cart'/> }
             </div>
         )
     }

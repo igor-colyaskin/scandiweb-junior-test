@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import {AmountWrapper} from "../styled/amount-wrapper";
+import React, {Component} from 'react'
 
 export class Amount extends Component {
 
@@ -7,9 +6,9 @@ export class Amount extends Component {
         const {amount, view} = this.props
 
         return (
-            <AmountWrapper view={view}>
+            <div className={`amount-wrapper amount-wrapper-${view}`}>
                 {amount}
-            </AmountWrapper>
+            </div>
         )
     }
 }

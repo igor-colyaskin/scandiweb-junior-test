@@ -1,8 +1,7 @@
-import React, {Component} from 'react';
-import {LeftBlockWrapper} from "./styled/left-block-wrapper";
-import {ProductAttributes} from "../ProductAttributes/product-attributes";
-import {ProductTitle} from "../ProductTitle/product-title";
-import {ProductPrice} from "../ProductPrice/product-price";
+import React, {Component} from 'react'
+import {ProductAttributes} from "../ProductAttributes/product-attributes"
+import {ProductTitle} from "../ProductTitle/product-title"
+import {ProductPrice} from "../ProductPrice/product-price"
 
 export class LeftBlock extends Component {
 
@@ -13,17 +12,14 @@ export class LeftBlock extends Component {
         const attributesProps = {attributesArray, selectedAttributes, view}
 
         return (
-            <LeftBlockWrapper
-                className='left-block-wrapper'
-                view={view}
-            >
+            <div className={`left-block-wrapper left-block-wrapper-${view}`}>
                 <ProductTitle {...titleProps} />
                 <ProductPrice {...priceProps} />
                 <ProductAttributes
                     {...attributesProps}
                     onAttributeClick={() => null}
                 />
-            </LeftBlockWrapper>
+            </div>
         )
     }
 }

@@ -1,14 +1,14 @@
-import {Component} from "react";
-import {connect} from "react-redux";
-import {cartSelector, cloneDeepCartSelector} from "../selectors/cart.selector";
-import {Cart} from "../components/Cart/cart";
-import {replaceCartWithUpdatedClone} from "../actions/cart.actions";
-import {currentCurrencyNumberSelector} from "../selectors/current-config.selector";
-import {currenciesArraySelector} from "../selectors/general-config..selector";
-import {setCartModalVisibility} from "../actions/current-config.actions";
-import {changeAmountOnCartId} from "../services/cart-clone-manipulation/change-amount-on-cart-id";
-import {removeItemFromCartClone} from "../services/cart-clone-manipulation/remove-item-from-cart-clone";
-import {replaceLocalStorageWithUpdatedCart} from "../services/local-storage-manipulation/replace-local-storage-with-updated-cart";
+import {Component} from "react"
+import {connect} from "react-redux"
+import {cartSelector, cloneDeepCartSelector} from "../selectors/cart.selector"
+import {Cart} from "../components/Cart/cart"
+import {replaceCartWithUpdatedClone} from "../actions/cart.actions"
+import {currentCurrencyNumberSelector} from "../selectors/current-config.selector"
+import {currenciesArraySelector} from "../selectors/general-config..selector"
+import {setCartModalVisibility} from "../actions/current-config.actions"
+import {changeAmountOnCartId} from "../services/cart-clone-manipulation/change-amount-on-cart-id"
+import {removeItemFromCartClone} from "../services/cart-clone-manipulation/remove-item-from-cart-clone"
+import {replaceLocalStorageWithUpdatedCart} from "../services/local-storage-manipulation/replace-local-storage-with-updated-cart"
 
 class CartHocRedux extends Component {
     onClickRemove = (itemId) => {

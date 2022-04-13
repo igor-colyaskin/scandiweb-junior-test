@@ -21,3 +21,88 @@
 .price-unit-4 {
   visibility: var(--price-visibility-4);
 }
+
+.price-units-wrapper {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  color: var(--dark-color-default-theme);
+  box-sizing: border-box;
+}
+
+.price-units-wrapper-for-big-cart {
+  height: 36px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.price-units-wrapper-for-mini-cart {
+  height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.price-units-wrapper-for-product-card {
+  height: 36px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.price-units-wrapper-for-product-in-category {
+  top: 4px;
+  left: 1px;
+  height: 24px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.product-price-wrapper-for-big-cart {
+  display: block;
+  width: 64px;
+  margin-top: 18px;
+  box-sizing: border-box;
+}
+
+.product-price-wrapper-for-mini-cart {
+  display: block;
+  width: 64px;
+  margin: 9px 0 0 1px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.product-price-wrapper-for-product-card {
+  display: flex;
+  flex-direction: column;
+  width: 292px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.product-price-wrapper-for-product-in-category {
+  display: block;
+  width: 64px;
+  margin-right: 12px;
+  box-sizing: border-box;
+}
+
+.price-caption {
+  display: flex;
+  font-family: var(--caption-in-product-card-font);
+  color: var(--dark-color-default-theme);
+  text-decoration: none;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.price-caption-for-big-cart,
+.price-caption-for-product-card {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.price-caption-for-mini-cart {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 14px;
+}

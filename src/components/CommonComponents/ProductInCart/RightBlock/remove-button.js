@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import {RemoveButtonWrapper} from "../styled/remove-button-wrapper";
+import React, {Component} from 'react'
 
 export class RemoveButton extends Component {
 
@@ -7,7 +6,7 @@ export class RemoveButton extends Component {
         const {onClickRemove, view} = this.props
 
         return (
-            <RemoveButtonWrapper view={view} onClick={onClickRemove}/>
+            <button className={`remove-button remove-button-${view}`} onClick={onClickRemove}/>
         )
     }
 }

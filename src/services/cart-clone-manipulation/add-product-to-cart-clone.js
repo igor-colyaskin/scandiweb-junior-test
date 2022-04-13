@@ -1,4 +1,4 @@
-import _ from "lodash";
+import _ from "lodash"
 
 export const addProductToCartClone = (cartClone, newCartItem) => {
     const findEqual = cartClone.filter(cartItem =>
@@ -19,6 +19,5 @@ export const addProductToCartClone = (cartClone, newCartItem) => {
     } else {
         return [...cartClone, {...newCartItem, amount: 1}]
     }
-
 }
 

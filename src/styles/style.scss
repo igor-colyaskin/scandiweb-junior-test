@@ -3,6 +3,9 @@
 @import "./variables_css";
 @import "index";
 @import "../components/App/app";
+@import "../components/Cart/cart";
+@import "../components/Cart/CartButtonBlock/cart-button-block";
+@import "../components/Cart/TotalBlock/total-block";
 @import "../components/Header/header";
 @import "../components/Header/Nav/nav";
 @import "../components/Header/HeaderRightBlock/CustomCurrencySelector/custom-currency-selector";
@@ -14,5 +17,8 @@
 @import "../components/ProductCard/product-card";
 @import "../components/ProductCard/ProductCardInfo/product-card-info";
 @import "../components/CommonComponents/ProductPrice/product-price";
+@import "../components/CommonComponents/Gallery/gallery";
+@import "../components/CommonComponents/ProductTitle/product-title";
+@import "../components/CommonComponents/ProductInCart/product-in-cart";
+@import "../components/CommonComponents/ProductAttributes/product-attributes";
 @import "../components/ModalMiniCart/modal-mini-cart-wrapper";
-@import "../components/Cart/CartButtonBlock/cart-button-block";

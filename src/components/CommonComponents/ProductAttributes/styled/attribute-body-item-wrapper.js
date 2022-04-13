@@ -6,10 +6,10 @@ export const AttributeBodyItemWrapper = styled.div`
   font-weight: 400;
   text-decoration: none;
   box-sizing: border-box;
-  cursor: ${props => props.view === 'forProductCard' ? 'pointer' : 'default'};
+  cursor: ${props => props.view === 'for-product-card' ? 'pointer' : 'default'};
 
   ${(props) => {
-    if ((props.view === 'forProductCard' || props.view === 'forBigCart') && props.attrType === 'swatch') {
+    if ((props.view === 'for-product-card' || props.view === 'for-big-cart') && props.attrType === 'swatch') {
       return css`
         font-size: 18px;
         height: 45px;
@@ -26,7 +26,7 @@ export const AttributeBodyItemWrapper = styled.div`
           box-shadow: 0 0 8px silver;
         }
       `
-    } else if ((props.view === 'forProductCard' || props.view === 'forBigCart') && props.attrType !== 'swatch') {
+    } else if ((props.view === 'for-product-card' || props.view === 'for-big-cart') && props.attrType !== 'swatch') {
       return css`
         font-size: 18px;
         height: 45px;
@@ -42,7 +42,7 @@ export const AttributeBodyItemWrapper = styled.div`
         background-color: white;
         color: var(--dark-color-default-theme);
       `
-    } else if (props.view === 'forMiniCart' && props.attrType === 'swatch') {
+    } else if (props.view === 'for-mini-cart' && props.attrType === 'swatch') {
       return css`
         font-size: 18px;
         height: 24px;
@@ -55,7 +55,7 @@ export const AttributeBodyItemWrapper = styled.div`
         background-size: 30% 30%;
         background-position: 92% 86%;
       `
-    } else if (props.view === 'forMiniCart' && props.attrType !== 'swatch') {
+    } else if (props.view === 'for-mini-cart' && props.attrType !== 'swatch') {
       return css`
         font-size: 14px;
         height: 24px;
@@ -77,7 +77,7 @@ export const AttributeBodyItemWrapper = styled.div`
     }
   }}
   &:hover {
-    box-shadow: ${props => props.view === 'forProductCard' ? '0 0 8px silver' : 'none'};
+    box-shadow: ${props => props.view === 'for-product-card' ? '0 0 8px silver' : 'none'};
   }
 `;
 

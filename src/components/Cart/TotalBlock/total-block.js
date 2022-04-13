@@ -1,10 +1,5 @@
 import React, {Component} from 'react'
-import {
-    TotalBlockAmountWrapper,
-    TotalBlockCaptionWrapper,
-    TotalBlockWrapper
-} from "../styled/total-block-wrapper";
-import {getLocalizedPrice} from "../../../services/get-localized-price-with-currency-label";
+import {getLocalizedPrice} from "../../../services/get-localized-price-with-currency-label"
 
 export class TotalBlock extends Component {
 
@@ -19,17 +14,11 @@ export class TotalBlock extends Component {
         const {label} = currenciesArray[currentCurrencyNumber]
 
         return (
-            <TotalBlockWrapper
-                className='total-block-wrapper'
-                view={view}
-            >
-                <TotalBlockCaptionWrapper view={view}>Total</TotalBlockCaptionWrapper>
-                <TotalBlockAmountWrapper
-                    view={view}
-                >
+            <div className={`total-block-wrapper total-block-wrapper-${view}`}>
+                <div className={`total-block-caption-wrapper-${view}`}>Total</div>
+                <div className={`total-block-amount-wrapper total-block-amount-wrapper-${view}`}>
                     {`${getLocalizedPrice(total, label)}`}
-                </TotalBlockAmountWrapper>
-
-            </TotalBlockWrapper>)
+                </div>
+            </div>)
     }
 }

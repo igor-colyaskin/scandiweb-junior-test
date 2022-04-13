@@ -4,7 +4,7 @@ const currentConfigReducerDefaultState = {
     isCartModalVisible: false
 }
 
-export default (state = currentConfigReducerDefaultState, action) => {
+const CurrentConfigReducer = (state = currentConfigReducerDefaultState, action) => {
     switch (action.type) {
         case 'SET_CURRENCY':
             return {...state, currency: action.currency}
@@ -17,3 +17,5 @@ export default (state = currentConfigReducerDefaultState, action) => {
             return state
     }
 }
+
+export default CurrentConfigReducer

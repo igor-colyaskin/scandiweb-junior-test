@@ -1,7 +1,4 @@
-import React, {Component} from 'react';
-import {ProductTitleWrapper} from "./styled/product-title-wrapper";
-import {ProductBrand} from "./styled/product-brand";
-import {ProductName} from "./styled/product-name";
+import React, {Component} from 'react'
 
 export class ProductTitle extends Component {
 
@@ -9,10 +6,10 @@ export class ProductTitle extends Component {
         const {brand, name, view} = this.props
 
         return (
-            <ProductTitleWrapper className='product-title-wrapper' view={view}>
-                <ProductBrand view={view}>{brand}</ProductBrand>
-                <ProductName view={view}>{name}</ProductName>
-            </ProductTitleWrapper>
+            <div className={`product-title-wrapper product-title-wrapper-${view}`}>
+                <div  className={`product-brand product-brand-${view}`}>{brand}</div>
+                <div  className={`product-name-${view}`}>{name}</div>
+            </div>
         )
     }
 }

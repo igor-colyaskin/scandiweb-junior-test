@@ -1,8 +1,7 @@
-import React, {Component} from 'react';
-import {PlusMinusBlockWrapper} from "../styled/plus-minus-block-wrapper";
-import {PlusMinusButton} from "./plus-minus-button";
-import {Amount} from "./amount";
-import {RemoveButton} from "./remove-button";
+import React, {Component} from 'react'
+import {PlusMinusButton} from "./plus-minus-button"
+import {Amount} from "./amount"
+import {RemoveButton} from "./remove-button"
 
 export class PlusMinusBlock extends Component {
 
@@ -10,7 +9,7 @@ export class PlusMinusBlock extends Component {
         const {amount, view, onClickPlusMinus, onClickRemove} = this.props
 
         return (
-            <PlusMinusBlockWrapper view={view}>
+            <div className={`plus-minus-block-wrapper plus-minus-block-wrapper-${view}`} >
                 <PlusMinusButton
                     value={1}
                     view={view}
@@ -27,7 +26,7 @@ export class PlusMinusBlock extends Component {
                 <RemoveButton
                     view={view}
                     onClickRemove={onClickRemove}/>
-            </PlusMinusBlockWrapper>
+            </div>
         )
     }
 }

@@ -3,7 +3,7 @@ const generalConfigReducerDefaultState = {
     currencies: []
 }
 
-export default (state = generalConfigReducerDefaultState, action) => {
+const generalConfigReducer = (state = generalConfigReducerDefaultState, action) => {
     switch (action.type) {
         case 'SET_CATEGORIES':
             return {...state, categories: action.categories}
@@ -13,3 +13,5 @@ export default (state = generalConfigReducerDefaultState, action) => {
             return state
     }
 }
+
+export default generalConfigReducer

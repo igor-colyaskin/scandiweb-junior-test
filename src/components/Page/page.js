@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
-import {Route, Switch} from "react-router-dom";
-import ProductHocApollo from "../../containers/product.hoc.apollo";
-import CategoryHoc from "../../containers/category.hoc";
-import CartHocRedux from "../../containers/cart.hoc.redux";
-import {CheckoutPage} from "../CheckoutPage/chekout-page";
+import React, {Component} from 'react'
+import {Route, Switch} from "react-router-dom"
+import ProductHocApollo from "../../containers/product.hoc.apollo"
+import CategoryHoc from "../../containers/category.hoc"
+import CartHocRedux from "../../containers/cart.hoc.redux"
+import {CheckoutPage} from "../CheckoutPage/chekout-page"
 
 export class Page extends Component {
     render() {
@@ -24,7 +24,7 @@ export class Page extends Component {
                         }}
                     />
                     <Route path='/cart' render={() => {
-                        return  <CartHocRedux view='forBigCart' />
+                        return  <CartHocRedux view='for-big-cart' />
                     }}/>
                     <Route path='/checkout-page' render={() => {
                         return  <CheckoutPage />

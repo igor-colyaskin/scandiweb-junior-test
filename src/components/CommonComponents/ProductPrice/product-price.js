@@ -1,7 +1,5 @@
-import React, {Component} from 'react';
-import {ProductPriceWrapper} from "./styled/product-price-wrapper";
-import {CaptionInProductCard} from "../CaptionInProductCard/caption-in-product-card";
-import {PriceUnits} from "./price-units";
+import React, {Component} from 'react'
+import {PriceUnits} from "./price-units"
 
 export class ProductPrice extends Component {
 
@@ -10,19 +8,16 @@ export class ProductPrice extends Component {
         const isCaptionVisible = view === 'forProductCard'
 
         return (
-            <ProductPriceWrapper
-                className='product-price-wrapper'
-                view={view}
-            >
+            <div className={`product-price-wrapper-${view}`}>
                 {isCaptionVisible &&
-                <CaptionInProductCard view={view}>
+                <div className={`price-caption price-caption-${view}`} >
                     PRICE:
-                </CaptionInProductCard>}
+                </div>}
                 <PriceUnits
                     productPrices={productPrices}
                     view={view}
                 />
-            </ProductPriceWrapper>
+            </div>
 
         )
     }

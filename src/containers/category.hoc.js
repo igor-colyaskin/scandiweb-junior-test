@@ -1,15 +1,15 @@
-import {Component} from "react";
-import {graphql} from "@apollo/client/react/hoc";
-import {flowRight as compose} from 'lodash';
-import {ProductsOfCategory} from "../components/ProductsOfCategory/products-of-category";
-import {categoryProducts} from "../queries/categoryProducts.query";
-import {connect} from "react-redux";
-import {setCategoryAction} from "../actions/current-config.actions";
-import {replaceCartWithUpdatedClone} from "../actions/cart.actions";
-import {v4 as uuidv4} from "uuid";
-import {addProductToCartClone} from "../services/cart-clone-manipulation/add-product-to-cart-clone";
-import {cloneDeepCartSelector} from "../selectors/cart.selector";
-import {replaceLocalStorageWithUpdatedCart} from "../services/local-storage-manipulation/replace-local-storage-with-updated-cart";
+import {Component} from "react"
+import {graphql} from "@apollo/client/react/hoc"
+import {flowRight as compose} from 'lodash'
+import {ProductsOfCategory} from "../components/ProductsOfCategory/products-of-category"
+import {categoryProducts} from "../queries/categoryProducts.query"
+import {connect} from "react-redux"
+import {setCategoryAction} from "../actions/current-config.actions"
+import {replaceCartWithUpdatedClone} from "../actions/cart.actions"
+import {v4 as uuidv4} from "uuid"
+import {addProductToCartClone} from "../services/cart-clone-manipulation/add-product-to-cart-clone"
+import {cloneDeepCartSelector} from "../selectors/cart.selector"
+import {replaceLocalStorageWithUpdatedCart} from "../services/local-storage-manipulation/replace-local-storage-with-updated-cart"
 
 class CategoryHoc extends Component {
 

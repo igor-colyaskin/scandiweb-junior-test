@@ -1,6 +1,5 @@
-import React, {Component} from 'react';
-import {Link} from "react-router-dom";
-import {CartButtonBlockWrapper} from "./styled/cart-button-block-wrapper";
+import React, {Component} from 'react'
+import {Link} from "react-router-dom"
 
 export class CartButtonBlock extends Component {
 
@@ -9,10 +8,7 @@ export class CartButtonBlock extends Component {
         const {view, closeMiniCartModal} = this.props
 
         return (
-            <CartButtonBlockWrapper
-                className='button-block-wrapper'
-                view={view}
-            >
+            <div className={`button-block-wrapper-${view}`}>
                 <Link
                     to='/cart'
                     className='cart-button-view-bag'
@@ -23,7 +19,7 @@ export class CartButtonBlock extends Component {
                     className='cart-button-check-out'
                     onClick={closeMiniCartModal}
                 >CHECK OUT</Link>
-            </CartButtonBlockWrapper>
+            </div>
         )
     }
 }

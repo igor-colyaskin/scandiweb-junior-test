@@ -1,5 +1,4 @@
-import {Component} from "react";
-import CartHocRedux from "../../containers/cart.hoc.redux";
+import {Component} from "react"
 
 export class ModalMiniCart extends Component {
     onModalMarginClick = this.props.onModalMarginClick
@@ -12,9 +11,9 @@ export class ModalMiniCart extends Component {
                 className='modal-mini-cart-wrapper'
                 onClick={this.onModalMarginClick}
             >
-                <CartHocRedux
-                    view='forMiniCart'
-                />
+                {/*<CartHocRedux*/}
+                {/*    view='for-mini-cart'*/}
+                {/*/>*/}
             </div>
         )
     }

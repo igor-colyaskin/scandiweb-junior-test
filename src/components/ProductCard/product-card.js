@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
-import {Gallery} from "../CommonComponents/Gallery/gallery";
-import ProductCardInfoHocRedux from "../../containers/product-card-info.hoc.redux";
-import {largeGalleryParameters, smallGalleryParameters} from "../../constants/gallery-props";
+import React, {Component} from 'react'
+import {Gallery} from "../CommonComponents/Gallery/gallery"
+import ProductCardInfoHocRedux from "../../containers/product-card-info.hoc.redux"
+import {largeGalleryParameters, smallGalleryParameters} from "../../constants/gallery-props"
 
 const {windowHeight, gap, frameHeight} = smallGalleryParameters
 const framesInWidowSmallGallery = (windowHeight + gap) / (frameHeight + gap)

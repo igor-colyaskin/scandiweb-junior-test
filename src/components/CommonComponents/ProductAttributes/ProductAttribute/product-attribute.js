@@ -1,7 +1,5 @@
-import React, {Component} from 'react';
-import {AttributeWrapper} from "../styled/attribute-wrapper";
-import {ProductAttributeBody} from "./product-attribute-body";
-import {CaptionInProductCard} from "../../CaptionInProductCard/caption-in-product-card";
+import React, {Component} from 'react'
+import {ProductAttributeBody} from "./product-attribute-body"
 
 export class ProductAttribute extends Component {
 
@@ -18,11 +16,11 @@ export class ProductAttribute extends Component {
         } = this.props
 
         return (
-            <AttributeWrapper className='attribute-wrapper' view={view}>
+            <div className={`attribute-wrapper attribute-wrapper-${view}`}>
                 {isCaptionVisible &&
-                <CaptionInProductCard className='price-or-attr-caption' view={view}>
+                <div className={`price-caption price-caption-${view}`}>
                     {`${name}:`}
-                </CaptionInProductCard>}
+                </div>}
                 <ProductAttributeBody
                     attributeId={attributeId}
                     items={items}
@@ -31,7 +29,7 @@ export class ProductAttribute extends Component {
                     view={view}
                     onAttributeClick={onAttributeClick}
                 />
-            </AttributeWrapper>
+            </div>
         )
     }
 }

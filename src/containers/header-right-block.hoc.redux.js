@@ -1,11 +1,11 @@
-import {Component} from "react";
-import {connect} from "react-redux";
-import {currentCurrencyNumberSelector} from "../selectors/current-config.selector";
-import {currenciesArraySelector} from "../selectors/general-config..selector";
-import {setCartModalVisibility, setCurrencyAction} from "../actions/current-config.actions";
-import {iChangeCurrency} from "../index";
-import {HeaderRightBlock} from "../components/Header/HeaderRightBlock/header-right-block";
-import {amountInCartSelector} from "../selectors/cart.selector";
+import {Component} from "react"
+import {connect} from "react-redux"
+import {currentCurrencyNumberSelector} from "../selectors/current-config.selector"
+import {currenciesArraySelector} from "../selectors/general-config..selector"
+import {setCartModalVisibility, setCurrencyAction} from "../actions/current-config.actions"
+import {iChangeCurrency} from "../index"
+import {HeaderRightBlock} from "../components/Header/HeaderRightBlock/header-right-block"
+import {amountInCartSelector} from "../selectors/cart.selector"
 
 class HeaderRightBlockHocRedux extends Component {
     onCartIconClick = () => {

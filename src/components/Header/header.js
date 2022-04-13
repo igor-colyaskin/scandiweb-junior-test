@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import NavHocRedux from "../../containers/nav.hoc.redux";
-import HeaderRightBlockHocRedux from "../../containers/header-right-block.hoc.redux";
+import React, {Component} from 'react'
+import NavHocRedux from "../../containers/nav.hoc.redux"
+import HeaderRightBlockHocRedux from "../../containers/header-right-block.hoc.redux"
 
 export class Header extends Component {
 

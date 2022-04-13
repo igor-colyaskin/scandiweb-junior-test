@@ -1,7 +1,7 @@
-import {Component} from "react";
-import {graphql} from "@apollo/client/react/hoc";
-import {ProductData} from "../queries/queryProductData";
-import {ProductCard} from "../components/ProductCard/product-card";
+import {Component} from "react"
+import {graphql} from "@apollo/client/react/hoc"
+import {ProductData} from "../queries/queryProductData"
+import {ProductCard} from "../components/ProductCard/product-card"
 
 class ProductHocApollo extends Component {
 

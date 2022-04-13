@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 import {
     GalleryWindow,
     GalleryStrip,
@@ -6,9 +6,8 @@ import {
     PointerLeft,
     PointerRight,
     PointerUp,
-    PointerDown,
-    FrameImg
-} from "./styled";
+    PointerDown
+} from "./styled"
 
 export class Gallery extends Component {
     state = {
@@ -85,11 +84,14 @@ export class Gallery extends Component {
                                 active={activeItemNumber === index && galleryPictures.length > 1}
                                 onClick={() => onClickFrame(index)}
                             >
-                                <FrameImg
+                                <img
                                     src={picture}
-                                    className='gallery-img'
-                                    frameCursorPointer={frameCursorPointer}
-                                    alt={`large view number ${index} of product`}/>
+                                    className={`gallery-img 
+                                        ${frameCursorPointer
+                                        ? 'gallery-img-cursor-pointer'
+                                        : 'gallery-img-cursor-default'}`}
+                                    alt={`large view number ${index} of product`}
+                                />
                             </GalleryFrame>
                         )
                     })}

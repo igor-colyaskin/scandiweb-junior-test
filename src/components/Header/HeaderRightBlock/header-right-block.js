@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import {CartInHeader} from "./CartInHeader/cart-in-header";
-import {CustomCurrencySelector} from "./CustomCurrencySelector/custom-currency-selector";
+import React, {Component} from 'react'
+import {CartInHeader} from "./CartInHeader/cart-in-header"
+import {CustomCurrencySelector} from "./CustomCurrencySelector/custom-currency-selector"
 
 export class HeaderRightBlock extends Component {
 

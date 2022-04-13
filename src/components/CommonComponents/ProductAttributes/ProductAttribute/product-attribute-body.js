@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
-import {AttributeBodyWrapper} from "../styled/attribute-body-wrapper";
-import {AttributeBodyItem} from "./attribute-body-item";
-import {fixCapacityNames} from "../../../../fixtures/fix-capacity-name";
+import React, {Component} from 'react'
+import {AttributeBodyItem} from "./attribute-body-item"
+import {fixCapacityNames} from "../../../../fixtures/fix-capacity-name"
 
 export class ProductAttributeBody extends Component {
 
@@ -16,10 +15,7 @@ export class ProductAttributeBody extends Component {
         } = this.props
 
         return (
-            <AttributeBodyWrapper
-                className='attribute-body-wrapper'
-                view={view}
-            >
+            <div className={`attribute-body attribute-body-${view}`}>
                 {items.map(item => {
                     return (
                         <AttributeBodyItem
@@ -29,7 +25,7 @@ export class ProductAttributeBody extends Component {
                             attrType={attrType}
                             view={view}
                             onAttributeClick={onAttributeClick}
-                            value={(attributeId === 'Capacity' && view === 'forMiniCart')
+                            value={(attributeId === 'Capacity' && view === 'for-mini-cart')
                                 ? fixCapacityNames[item.value]
                                 : item.value}
                             displayValue={item.displayValue}
@@ -37,7 +33,7 @@ export class ProductAttributeBody extends Component {
                         />
                     )
                 })}
-            </AttributeBodyWrapper>
+            </div>
         )
     }
 }

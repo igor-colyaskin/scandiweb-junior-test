@@ -1,9 +1,9 @@
-import {Component} from "react";
-import {connect} from "react-redux";
-import {currentCategoryNumberSelector} from "../selectors/current-config.selector";
-import {Nav} from "../components/Header/Nav/nav";
-import {categoriesArraySelector} from "../selectors/general-config..selector";
-import {setCategoryAction} from "../actions/current-config.actions";
+import {Component} from "react"
+import {connect} from "react-redux"
+import {currentCategoryNumberSelector} from "../selectors/current-config.selector"
+import {Nav} from "../components/Header/Nav/nav"
+import {categoriesArraySelector} from "../selectors/general-config..selector"
+import {setCategoryAction} from "../actions/current-config.actions"
 
 class NavHocRedux extends Component {
     onLinkClick = (categoryName) =>

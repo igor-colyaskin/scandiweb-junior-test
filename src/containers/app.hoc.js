@@ -1,12 +1,12 @@
-import {Component} from "react";
-import {graphql} from "@apollo/client/react/hoc";
-import {flowRight as compose} from 'lodash';
-import {allCategoriesAndAllCurrencies} from "../queries/allCategoriesAndAllCurrencies.query";
-import {App} from "../components/App/app";
-import {connect} from "react-redux";
-import {setCategoriesAction, setCurrenciesAction} from "../actions/general-config.actions";
-import {setCartModalVisibility} from "../actions/current-config.actions";
-import {replaceCartWithUpdatedClone} from "../actions/cart.actions";
+import {Component} from "react"
+import {graphql} from "@apollo/client/react/hoc"
+import {flowRight as compose} from 'lodash'
+import {allCategoriesAndAllCurrencies} from "../queries/allCategoriesAndAllCurrencies.query"
+import {App} from "../components/App/app"
+import {connect} from "react-redux"
+import {setCategoriesAction, setCurrenciesAction} from "../actions/general-config.actions"
+import {setCartModalVisibility} from "../actions/current-config.actions"
+import {replaceCartWithUpdatedClone} from "../actions/cart.actions"
 
 class AppHoc extends Component {
     onModalMarginClick = (e) => {

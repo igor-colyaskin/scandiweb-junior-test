@@ -1,5 +1,4 @@
-import {Component} from "react";
-import {CartCaptionWrapper} from "../styled/cart-caption-wrapper";
+import {Component} from "react"
 
 export class CartCaption extends Component {
 
@@ -15,13 +14,10 @@ export class CartCaption extends Component {
         }
 
         return (
-            <CartCaptionWrapper
-                className='cart-caption-wrapper'
-                view={view}
-            >
-                {view === 'forBigCart' && 'CART'}
-                {view === 'forMiniCart' && textForMiniCart()}
-            </CartCaptionWrapper>
+            <div className={`cart-caption-wrapper cart-caption-wrapper-${view}`}>
+                {view === 'for-big-cart' && 'CART'}
+                {view === 'for-mini-cart' && textForMiniCart()}
+            </div>
         )
     }
 }

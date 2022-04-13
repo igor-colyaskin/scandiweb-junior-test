@@ -15,10 +15,27 @@
 .cart-button-view-bag {
   border: 1px solid var(--dark-color-default-theme);
   color: var(--dark-color-default-theme);
-  background-color:  var(--c-white);
+  background-color: var(--c-white);
 }
 
 .cart-button-check-out {
   color: var(--c-white);
-  background-color:  var(--c-primary);
+  background-color: var(--c-primary);
+}
+
+.button-block-wrapper-for-big-cart {
+  min-height: 531px;
+  max-width: 1098px;
+  padding-bottom: 36px;
+  box-sizing: border-box;
+}
+
+.button-block-wrapper-for-mini-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 293px;
+  margin-top: 42px;
+  background-color: var(--c-white);
+  box-sizing: border-box;
 }

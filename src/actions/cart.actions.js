@@ -31,9 +31,3 @@ export const removeItemFromCartCartAction = (
     type: 'REMOVE_ITEM_FROM_CART',
     itemId
 })
-
-export const editItemInCartCartAction = (itemId, updates) => ({
-    type: 'EDIT_ITEM_IN_CART',
-    itemId,
-    updates
-})

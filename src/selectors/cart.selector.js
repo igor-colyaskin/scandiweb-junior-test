@@ -1,4 +1,4 @@
-import _ from "lodash";
+import _ from "lodash"
 
 export const cartSelector = (state) => state.cart
 
@@ -7,5 +7,7 @@ export const cloneDeepCartSelector = (state) => {
 }
 
 export const amountInCartSelector = (state) => {
-    return state.cart.length
+    return state.cart.reduce((acc, item) =>{
+        return acc + item.amount
+    }, 0)
 }

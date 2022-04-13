@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {AttributeBodyItemWrapper} from "../styled/attribute-body-item-wrapper";
+import React, {Component} from 'react'
+import {AttributeBodyItemWrapper} from "../styled/attribute-body-item-wrapper"
 
 export class AttributeBodyItem extends Component {
 

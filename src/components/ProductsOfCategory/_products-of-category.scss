@@ -38,6 +38,10 @@
   &:hover {
     box-shadow: 0 4px 35px var(--c-product-in-category-shadow-hover);
   }
+
+  &.not-in-stock {
+    opacity: .5;
+  }
 }
 
 .product-image-wrapper {
@@ -51,4 +55,14 @@
     width: 100%;
     object-fit: scale-down;
   }
+}
+
+.out-of-stock-warning {
+  position: absolute;
+  top: 167px;
+  left: 106px;
+  font-family: var(--price-regular-font);
+  font-size: 24px;
+  color: var(--dark-color-default-theme);
+  box-sizing: border-box;
 }

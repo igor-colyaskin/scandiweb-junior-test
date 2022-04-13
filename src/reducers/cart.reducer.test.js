@@ -6,8 +6,8 @@ import
     attributesItem0,
     productDataItem1,
     attributesItem1
-} from "../constants/mocks-for-tests/state-01";
-import {addProductToCartAction} from "../actions/cart.actions";
+} from "../constants/mocks-for-tests/state-01"
+import {addProductToCartAction} from "../actions/cart.actions"
 
 test('should setup new cart object at initialization', () => {
     const cart = cartReducer(undefined, {type: '@@INIT'})

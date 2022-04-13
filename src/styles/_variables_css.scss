@@ -9,7 +9,7 @@ body {
   --c-primary-hover: #0DBF3B;
   --c-product-in-category-background: #F7F7F7;
   --c-product-in-category-shadow: rgba(168, 172, 176, .12);
-  --c-product-in-category-shadow-hover: rgba(168, 172, 176, .22);
+  --c-product-in-category-shadow-hover: rgba(168, 172, 176, .19);
 
   --c-frame-in-gallery-background: #FBFBFB;
   --caption-in-product-card-font: Roboto Condensed, sans-serif;
@@ -25,6 +25,7 @@ body {
   --price-visibility-3: hidden;
   --price-visibility-4: hidden;
 }
+
 .variables-set-1 {
   --price-visibility-0: hidden;
   --price-visibility-1: visible;
@@ -32,6 +33,7 @@ body {
   --price-visibility-3: hidden;
   --price-visibility-4: hidden;
 }
+
 .variables-set-2 {
   --price-visibility-0: hidden;
   --price-visibility-1: hidden;
@@ -39,6 +41,7 @@ body {
   --price-visibility-3: hidden;
   --price-visibility-4: hidden;
 }
+
 .variables-set-3 {
   --price-visibility-0: hidden;
   --price-visibility-1: hidden;
@@ -46,6 +49,7 @@ body {
   --price-visibility-3: visible;
   --price-visibility-4: hidden;
 }
+
 .variables-set-4 {
   --price-visibility-0: hidden;
   --price-visibility-1: hidden;
